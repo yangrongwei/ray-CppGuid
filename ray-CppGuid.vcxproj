@@ -134,7 +134,7 @@
     <ClCompile Include="ray-CppGuid.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <Text Include="Readme.txt" />
+    <Text Include="Readme.md" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
