@@ -22,4 +22,9 @@
   <ItemGroup>
     <Text Include="Readme.md" />
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="cppguid.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
 </Project>
