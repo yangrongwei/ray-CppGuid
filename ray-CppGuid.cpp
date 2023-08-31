@@ -85,3 +85,18 @@ int main()
 	wprintf(L"The foo2 %s\n", buf);
 
 }
+
+/*
+https://social.microsoft.com/Forums/partner/zh-CN/371a069b-f428-47b5-8f7b-e9ad85964bce/guidnull-undeclared-identifier?forum=vclanguage
+
+VS 6 Code for GUID_NULL:
+
+#define DEFINE_GUIDSTRUCT(g, n) struct __declspec(uuid(g)) n
+
+#define DEFINE_GUIDNAMED(n) n
+
+DEFINE_GUIDSTRUCT("00000000-0000-0000-0000-000000000000", GUID_NULL);
+
+#define GUID_NULL DEFINE_GUIDNAMED(GUID_NULL)
+
+*/
